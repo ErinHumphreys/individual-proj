@@ -1,0 +1,239 @@
+/* span wprd colour */
+.red {
+  color: #730F0F;
+ }
+/* One Player button colour */
+.b-red {
+  background-color: #730F0F;
+}
+
+/* span colour */
+.orange {
+  color: orange;
+}
+
+/* span colour */
+.blue {
+  color: darkblue;
+}
+/* two player button colour */
+.b-blue {
+  background-color: darkblue;
+ }
+
+body {
+  font-family: "Luckiest Guy";
+  margin: 0px;
+}
+
+/* Background picture */
+#back{
+  background-image: url("./pic/pic7.jpg");
+  background-size:cover;
+  background-position: center center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+}
+
+.header {
+  text-align:center;
+  margin: 30px auto auto;
+  display:  inline-block;
+  width: 100%;
+}
+
+.header .title {
+    margin: 50px auto auto;
+    width: 500px;
+    height: 200px;
+    text-align:center;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100px;
+  }
+
+/* Player indicator */
+.legend-blue,
+.legend-red {
+  color: #fff;
+  width: 250px;
+  margin: 25px auto 0 auto;
+  border-radius: 100% 100% 0 0;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px; }
+
+/* Player colour indicator */
+.legend-blue {
+  background-color: #1A446E;
+}
+
+.legend-red {
+  background-color: #730F0F;
+}
+
+
+/* "Thinking" pop up */
+.block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  display: block;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 72px;
+  color: #fff;
+
+}
+
+.board {
+  /* border: 5px solid #b2af9a; */
+  border: 5px solid black;
+  margin: 50px auto auto;
+  width: 500px;
+  height: 500px;
+  font-size: 30px;
+ }
+  .board .header-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+    /* reset button */
+    .board .header-board button {
+      font-family: "Luckiest Guy";
+      font-size: 18px;
+      border: none;
+      background: none;
+      color: #b2af9a;
+      cursor: pointer;
+    }
+    /* Title in board */
+  .board .title {
+    color: #C0C0C0;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  /* Buttons */
+  .board .buttom {
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .board .buttoms {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .board .row {
+    display: flex;
+    width: 400px;
+    margin: 0 auto auto;
+  }
+    .board .row div {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      text-align: center;
+      font-size: 110px;
+    }
+    /* Player icon colour for X */
+    .board .row .X {
+      color: #730F0F;
+
+    }
+    /* Player icon colour for O */
+    .board .row .O {
+      color: #1A446E;
+
+    }
+  .board .row-one, .board .row-two {
+    /* Board grid colour */
+    border-bottom: 3px solid black;
+  }
+    .board .row-one .one, .board .row-two .one,
+    .board .row-one .two,
+    .board .row-two .two {
+      /* Board grid colour */
+      border-right: 3px solid black;
+    }
+  .board .row-three .one,
+  .board .row-three .two {
+    /* Board grid colour */
+    border-right: 3px solid black;
+  }
+  .board.turn {
+    margin-top: 0; }
+    .board.turn.turn-red {
+      /* Grid boarder colour for X */
+      border: 2px solid #730F0F;
+    }
+    .board.turn.turn-blue {
+      /* Grid boarder colour for O*/
+      border: 2px solid #1A446E;
+    }
+/* Scores  */
+.points {
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+  font-size: 18px;
+  margin: 5px 0 5px 0;
+}
+  .points .point {
+    margin: 0 10px 0 10px;
+  }
+    .points .point.first {
+      color: #1A446E;
+    }
+    .points .point.last {
+      color: #730F0F;
+    }
+/* End of game pop up */
+.modal {
+  width: 300px;
+  height: 300px;
+  background-color: #b2af9a;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -115px;
+  bottom: 0;
+  text-align: center;
+}
+  .modal .content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal .next {
+    background-color: #fff;
+    width: 120px;
+    box-shadow: 5px 5px 5px #888;
+    border: 1px solid #b2af9a;
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .modal h1 {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  .modal img {
+    width: 100px;
+    margin-top: 5px;
+  }
